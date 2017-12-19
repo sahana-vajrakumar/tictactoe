@@ -1,5 +1,5 @@
 .row{
-    width: 60%;
+    width: 36%;
     height: 150px;
 }
 
@@ -14,22 +14,55 @@
 } */
 .col{
     width: 32%;
-    height: 145.5px;
-    border: 3px solid black;
+    height: 147px;
+    border: 3px solid white;
     float: left;
     text-align: center;
-    font-size: 80px;
-    font-family: helvetica;
+    font-size: 100px;
     font-style: italic;
-    color: black;
+    color: red;
     cursor: pointer;
-}
-h1{
-  font-size: 40px;
-  text-align: center;
+    font-family: 'Kaushan Script', cursive;
 
+}
+
+.col1{
+  border-top: none;
+}
+
+.col3{
+  border-bottom: none;
+}
+
+.col4{
+  border-left: none;
+}
+
+.col6{
+  border-right: none;
+}
+
+
+
+h1{
+  font-size: 60px;
+  text-align: center;
+  color: white;
+
+}
+
+h3{
+  font-size: 20px;
+  text-align: center;
+  color:white;
+  display:none;
 }
 
 body{
-  background-color: grey;
+  background-color: black;
+}
+
+#game-wrap{
+margin-left:30%;
+width:100%;
 }

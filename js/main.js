@@ -33,21 +33,21 @@ let rowTwo = $('.col2').text();
 let rowThree = $('.col3').text();
 
 if(rowOne === "XXX"){
-  console.log('X wins');
+  $('#X').show();
 }else if(rowOne === "OOO"){
-  console.log('O wins');
+  $('#Y').show();
 }
 
 if(rowTwo === "XXX"){
-  console.log('X wins');
+  $('#X').show();
 }else if(rowTwo === "OOO"){
-  console.log('O wins');
+  $('#Y').show();
 }
 
 if(rowThree === "XXX"){
-  console.log('X wins');
+  $('#X').show();
 }else if(rowThree === "OOO"){
-  console.log('O wins');
+  $('#Y').show();
 }
 }
 
@@ -57,21 +57,21 @@ let gameWonCol = function(){
   let rowTwo = $('.col5').text();
   let rowThree = $('.col6').text();
   if(rowOne === "XXX"){
-    console.log('X wins');
+    $('#X').show();
   }else if(rowOne === "OOO"){
-    console.log('O wins');
+    $('#Y').show();
   }
 
   if(rowTwo === "XXX"){
-    console.log('X wins');
+    $('#X').show();
   }else if(rowTwo === "OOO"){
-    console.log('O wins');
+    $('#Y').show();
   }
 
   if(rowThree === "XXX"){
-    console.log('X wins');
+    $('#X').show();
   }else if(rowThree === "OOO"){
-    console.log('O wins');
+    $('#Y').show();
   }
 
 
@@ -82,15 +82,15 @@ let gameDiag = function(){
   let rowTwo = $('.col8').text();
 
   if(rowOne === "XXX"){
-    console.log('X wins');
+    $('#X').show();
   }else if(rowOne === "OOO"){
-    console.log('O wins');
+    $('#Y').show();
   }
 
   if(rowTwo === "XXX"){
-    console.log('X wins');
+    $('#X').show();
   }else if(rowTwo === "OOO"){
-    console.log('O wins');
+    $('#Y').show();
   }
 
 
