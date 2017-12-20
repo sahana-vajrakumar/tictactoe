@@ -20,7 +20,8 @@ $(document).ready(function() {
   });
 
   displayResult = function() {
-
+let playerOneScore = 0;
+let playerTwoScore = 0;
     let gameRows = {
       rowOne: $('.col1').text(),
       rowTwo: $('.col2').text(),
@@ -35,18 +36,18 @@ $(document).ready(function() {
     for (let key in gameRows) {
       if (gameRows[key] === "XXX") {
         $('#X').show();
-        setTimeout("location.href = 'file:///Users/Sandy/wdi/projects/project0/tictac.html'",5000);
+        setTimeout("location.href = 'file:///Users/Sandy/wdi/projects/project0/tictac.html'",3000);
         return;
       } else if (gameRows[key] === "OOO") {
         $('#Y').show();
-        setTimeout("location.href = 'file:///Users/Sandy/wdi/projects/project0/tictac.html'",5000);
+        setTimeout("location.href = 'file:///Users/Sandy/wdi/projects/project0/tictac.html'",3000);
         return;
       }
     }
 
     if (click >= 9){
         $('#draw').show();
-        setTimeout("location.href = 'file:///Users/Sandy/wdi/projects/project0/tictac.html'",5000);
+        setTimeout("location.href = 'file:///Users/Sandy/wdi/projects/project0/tictac.html'",3000);
 
     }
 

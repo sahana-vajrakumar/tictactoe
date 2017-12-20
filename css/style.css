@@ -13,21 +13,24 @@
     height: 150px;
 } */
 .col{
+
     width: 32%;
     height: 147px;
-    border: 3px solid white;
+    border: 3px solid #8B4513;
     float: left;
     text-align: center;
     font-size: 100px;
     font-style: italic;
-    color: red;
-    cursor: pointer;
+    color: #FF7F50;
     font-family: 'Kaushan Script', cursive;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, .8), -1px -1px 0px rgba(0, 0, 0, .8), 1px -4px 1px rgba(0, 0, 0, .8);
+
 
 }
 
 .col1{
   border-top: none;
+
 }
 
 .col3{
@@ -45,25 +48,40 @@
 
 
 h1{
-  font-size: 60px;
+  font-size: 70px;
   text-align: center;
-  color: white;
-  font-family: 'Kaushan Script', cursive;
+  color: 	#8B4513;
+  font-family: "tic tac toe";
+  margin-top: 0;
 
 }
+body{
+  background:#f1e4b0;
+    font-family: 'Kaushan Script', cursive;
+      color:#D3C9A2;
+    font-size:4em;
+    letter-spacing:0.05em;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, .8), -1px -1px 0px rgba(0, 0, 0, .8), 1px -4px 1px rgba(0, 0, 0, .8);
+    background-image: url("http://www.psdgraphics.com/file/old-paper-texture.jpg");
+}
+
 
 h3{
   font-size: 20px;
   text-align: center;
   color:white;
   display:none;
+  margin-top: 0;
+  padding: -20px;
 }
 
-body{
-  background-color: black;
-}
+/* body{
+  background-image: url("https://crawlspacemagazine.files.wordpress.com/2014/04/dark_spots_texture_background_50355_2558x1562.jpg");
+} */
 
 #game-wrap{
 margin-left:30%;
 width:100%;
+
 }
