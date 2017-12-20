@@ -52,4 +52,20 @@ let playerTwoScore = 0;
     }
 
   }
+
+$('#start').click(function(){
+  $('#gameType').show();
+  $('#start').hide();
+})
+
+$('#gameType').click(function(){
+  $('#playerType').show();
+  $('#gameType').hide();
+})
+
+$('#playerType').click(function(){
+  $('#game-wrap').show();
+  $('#playerType').hide();
+})
+
 });

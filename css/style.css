@@ -66,9 +66,18 @@ body{
     background-image: url("http://www.psdgraphics.com/file/old-paper-texture.jpg");
 }
 
+h2{
+  font-size: 30px;
+  text-align: center;
+  color:white;
+  display:none;
+  margin-top: 0;
+  padding: -20px;  
+}
+
 
 h3{
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   color:white;
   display:none;
@@ -83,5 +92,77 @@ h3{
 #game-wrap{
 margin-left:30%;
 width:100%;
+display: none;
 
+}
+
+
+.gameOptions {
+    text-align: center;
+
+}
+
+
+
+.button{
+  display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #8B4513;
+    padding: 10px 60px;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    border: 1px solid #8B4513;
+    background-image: linear-gradient(bottom, rgb(	139, 69, 19) 0%, rgb(210, 105, 30) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(	139, 69, 19) 0%, rgb(210, 105, 30) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(	139, 69, 19) 0%, rgb(210, 105, 30) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(	139, 69, 19) 0%, rgb(210, 105, 30) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(	139, 69, 19) 0%, rgb(210, 105, 30) 100%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(	139, 69, 19)),
+        color-stop(1, rgb(210, 105, 30))
+    );
+
+    -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+text-shadow: 0px  -1px 0px rgba(0,0,0,.5);
+text-shadow: x-offset y-offset blur color;
+-webkit-box-shadow: 0px 6px 0px #8B4513;
+-moz-box-shadow: 0px 6px 0px #8B4513;
+box-shadow: 0px 6px 0px #8B4513;
+-webkit-box-shadow: 0px 6px 0px #8B4513, 0px 3px 15px rgba(0,0,0,.4);
+-moz-box-shadow: 0px 6px 0px #8B4513, 0px 3px 15px rgba(0,0,0,.4);
+box-shadow: 0px 6px 0px #8B4513, 0px 3px 15px rgba(0,0,0,.4);
+}
+
+
+.button:hover {
+    background-image: linear-gradient(bottom, rgb(	210, 105, 30) 0%, rgb(	255, 127, 80) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(	210, 105, 30) 0%, rgb(	255, 127, 80) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(	210, 105, 30) 0%, rgb(	255, 127, 80) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(	210, 105, 30) 0%, rgb(	255, 127, 80) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(	210, 105, 30) 0%, rgb(	255, 127, 80) 100%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(	210, 105, 30)),
+        color-stop(1, rgb(	255, 127, 80))
+    );
+}
+
+
+#gameType{
+  display: none;
+}
+
+#playerType{
+  display: none;
 }
