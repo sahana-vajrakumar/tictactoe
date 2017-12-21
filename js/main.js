@@ -38,14 +38,14 @@ let game = function(){
         $('#X').show();
         playerOneScore++;
         $('.col').off('click');
-        $('#player1Win').text(`PlayerOne Score: ${playerOneScore}`)
+        $('#player1Win').text(`PlayerX Score: ${playerOneScore}`)
 
         return;
       } else if (gameRows[key] === "OOO") {
         $('#Y').show();
         playerTwoScore++;
         $('.col').off('click');
-        $('#player2Win').text(`PlayerTwo Score: ${playerTwoScore}`)
+        $('#player2Win').text(`PlayerO Score: ${playerTwoScore}`)
         return;
       }
     }
@@ -120,10 +120,8 @@ $('#playerTwo').click(function(){
 })
 
 $('#restart').click(function(){
-// debugger;
   numberOfClicks = 0;
   $('.col').html('');
-  // $('#game-wrap').show()
   game();
   $('#X').hide();
   $('#Y').hide();
@@ -131,10 +129,8 @@ $('#restart').click(function(){
 });
 
 $('#restartSingleMode').click(function(){
-// debugger;
   clickCount = 0;
   $('.col').html('');
-  // $('#game-wrap').show()
   aiGame();
   $('#X').hide();
   $('#Y').hide();
