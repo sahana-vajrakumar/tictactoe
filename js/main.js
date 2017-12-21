@@ -58,6 +58,7 @@ let game = function(){
 
 let clickCount = 0;
   let aiGame = function(){
+    $(".col").off("click");
     $(".col").one("click" , function(e) {
       $(event.target).html("X");
 
@@ -90,6 +91,7 @@ $('#start').click(function(){
 })
 
 $('#single').click(function(){
+  $('#restartSingleMode').show();
   $('#game-wrap').show();
   $('#gameType').hide();
   aiGame();
@@ -123,6 +125,17 @@ $('#restart').click(function(){
   $('.col').html('');
   // $('#game-wrap').show()
   game();
+  $('#X').hide();
+  $('#Y').hide();
+  $('#draw').hide();
+});
+
+$('#restartSingleMode').click(function(){
+// debugger;
+  clickCount = 0;
+  $('.col').html('');
+  // $('#game-wrap').show()
+  aiGame();
   $('#X').hide();
   $('#Y').hide();
   $('#draw').hide();
