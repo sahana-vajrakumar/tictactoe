@@ -11,13 +11,14 @@ Jquery
 CSS3 for styling.
 
 Features:
+
 Single player and Multi Player options.
-Multi Player option lets the user select t X or O symbols.
+Multi Player option lets the user select X or O symbols.
 Restart button to restart/abort the game.
 win count for each player.  
 
 Known Bugs:
-User should refresh the page to get to the PLAY button.
+User should refresh the page every time to get to the PLAY button.
 
 
 WishList:

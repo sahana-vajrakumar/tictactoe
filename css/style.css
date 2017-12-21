@@ -60,7 +60,8 @@ body{
     text-transform: capitalize;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, .8), -1px -1px 0px rgba(0, 0, 0, .8), 1px -4px 1px rgba(0, 0, 0, .8);
     background-image: url("http://www.psdgraphics.com/file/old-paper-texture.jpg");
-    /* background-image: url("https://ak1.picdn.net/shutterstock/videos/16917631/thumb/1.jpg"); */
+    max-width:100%;
+    height:auto;
 
     background-repeat: no-repeat;
     background-size: cover;
