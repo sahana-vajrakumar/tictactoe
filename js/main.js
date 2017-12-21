@@ -38,11 +38,14 @@ let game = function(){
         $('#X').show();
         playerOneScore++;
         $('.col').off('click');
+        $('#player1Win').text(`PlayerOne Score: ${playerOneScore}`)
+
         return;
       } else if (gameRows[key] === "OOO") {
         $('#Y').show();
         playerTwoScore++;
         $('.col').off('click');
+        $('#player2Win').text(`PlayerTwo Score: ${playerTwoScore}`)
         return;
       }
     }
