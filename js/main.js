@@ -55,7 +55,7 @@ let game = function(){
     }
 
   }
-
+//this is for AI
 let clickCount = 0;
   let aiGame = function(){
     $(".col").off("click");
