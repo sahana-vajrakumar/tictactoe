@@ -12,9 +12,9 @@ let game = function(){
     }
     displayResult();
     count++
-    console.log(`count: ${count}`)
+    // console.log(`count: ${count}`)
     numberOfClicks++;
-    console.log(numberOfClicks)
+    // console.log(numberOfClicks)
     return;
   });
 };
@@ -80,8 +80,9 @@ let clickCount = 0;
           break;
         }
       }
-
 displayResult();
+numberOfClicks = numberOfClicks + 2;
+console.log(numberOfClicks);
 });
 };
 
@@ -129,6 +130,7 @@ $('#restart').click(function(){
 });
 
 $('#restartSingleMode').click(function(){
+  numberOfClicks = 0;
   clickCount = 0;
   $('.col').html('');
   aiGame();

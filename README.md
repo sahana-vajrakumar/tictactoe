@@ -1,8 +1,5 @@
 README
-Project0:
-
-https://sahana-vajrakumar.github.io/tictactoe/.
-
+Project0: Tic Tac Toe
 
 Languages & tools Used:
 HTML
@@ -15,7 +12,8 @@ Features:
 Single player and Multi Player options.
 Multi Player option lets the user select X or O symbols.
 Restart button to restart/abort the game.
-win count for each player.  
+win count for each player.
+Regular and AI mode. 
 
 Known Bugs:
 User should refresh the page every time to get to the PLAY button.
