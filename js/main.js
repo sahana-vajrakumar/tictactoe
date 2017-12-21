@@ -56,12 +56,46 @@ let game = function(){
 
   }
 
+let clickCount = 0;
+  let aiGame = function(){
+    $(".col").one("click" , function(e) {
+      $(event.target).html("X");
+
+      let alreadyClicked = true;
+      while(alreadyClicked){
+        let randomNumber = Math.floor((Math.random() * 9) + 1);
+        // console.log(randomNumber);
+        // console.log(clickCount);
+        if($(`#id${randomNumber}`).text() === ""){
+
+          $(`#id${randomNumber}`).html("O");
+
+          alreadyClicked = false;
+          clickCount = clickCount + 2;
+
+        }
+
+        if(clickCount>7){
+          break;
+        }
+      }
+
+displayResult();
+});
+};
+
 $('#start').click(function(){
   $('#gameType').show();
   $('#start').hide();
 })
 
-$('#gameType').click(function(){
+$('#single').click(function(){
+  $('#game-wrap').show();
+  $('#gameType').hide();
+  aiGame();
+})
+
+$('#multi').click(function(){
   $('#playerType').show();
   $('#gameType').hide();
 })
@@ -85,11 +119,8 @@ $('#playerTwo').click(function(){
 
 $('#restart').click(function(){
 // debugger;
-  console.log( 'col text before setting to empty string:', $('.col').text());
   numberOfClicks = 0;
   $('.col').html('');
-
-  console.log( 'col text:', $('.col').text());
   // $('#game-wrap').show()
   game();
   $('#X').hide();
