@@ -1,26 +1,31 @@
 
-
 $(document).ready(function() {
-let click = 1;
-  let game = function(){
-  $('#game-wrap').show();
-    $(".col").click(function(e) {
-    if (click % 2 === 0) {
+let count;
+let numberOfClicks = 0;
+let game = function(){
+    $(".col").off("click");
+    $(".col").one("click" , function(e) {
+
+    if (count % 2 === 0) {
       $(event.target).html("X");
+
     } else {
       $(event.target).html("O");
+
     }
     displayResult();
-    click++
-
+    count++
+    console.log(`count: ${count}`)
+    numberOfClicks++;
+    console.log(numberOfClicks)
+    return;
   });
-}
+};
 
-
+  let playerOneScore = 0;
+  let playerTwoScore = 0;
   displayResult = function() {
-let playerOneScore = 0;
-let playerTwoScore = 0;
-    let gameRows = {
+  let gameRows = {
       rowOne: $('.col1').text(),
       rowTwo: $('.col2').text(),
       rowThree: $('.col3').text(),
@@ -35,19 +40,27 @@ let playerTwoScore = 0;
       if (gameRows[key] === "XXX") {
         $('#X').show();
         playerOneScore++;
-        setTimeout("location.href = 'file:///Users/Sandy/wdi/projects/project0/tictac.html'",3000);
+
+        // setTimeout("location.href = 'file:///Users/Sandy/wdi/projects/project0/tictac.html'",3000);
+        console.log(`PLAYER ONE SCORE:${playerOneScore}`)
+        $('.col').off('click');
         return;
       } else if (gameRows[key] === "OOO") {
         $('#Y').show();
         playerTwoScore++;
-        setTimeout("location.href = 'file:///Users/Sandy/wdi/projects/project0/tictac.html'",3000);
+
+        // setTimeout("location.href = 'file:///Users/Sandy/wdi/projects/project0/tictac.html'",3000);
+        console.log(`PLAYER TWO SCORE:${playerTwoScore}`)
+        $('.col').off('click');
         return;
       }
     }
+    // debugger;
+    if (numberOfClicks >= 8){
 
-    if (click >= 9){
         $('#draw').show();
-        setTimeout("location.href = 'file:///Users/Sandy/wdi/projects/project0/tictac.html'",3000);
+        return;
+        // setTimeout("location.href = 'file:///Users/Sandy/wdi/projects/project0/tictac.html'",3000);
 
     }
 
@@ -65,14 +78,34 @@ $('#gameType').click(function(){
 
 $('#playerOne').click(function(){
   $('#playerType').hide();
-  click = 2;
+  $('#restart').show();
+  count = 2;
+  $('#game-wrap').show();
   game();
+
 })
 
 $('#playerTwo').click(function(){
   $('#playerType').hide();
-  click = 1;
+  $('#restart').show();
+  count = 1;
+  $('#game-wrap').show();
   game();
 })
+
+$('#restart').click(function(){
+// debugger;
+  console.log( 'col text before setting to empty string:', $('.col').text());
+  numberOfClicks = 0;
+  $('.col').html('');
+
+  console.log( 'col text:', $('.col').text());
+  // $('#game-wrap').show()
+  game();
+  $('#X').hide();
+  $('#Y').hide();
+  $('#draw').hide();
+});
+
 
 });

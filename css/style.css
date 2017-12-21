@@ -48,11 +48,12 @@
 
 
 h1{
-  font-size: 70px;
+  font-size: 80px;
   text-align: center;
   color: 	#8B4513;
-  font-family: "tic tac toe";
+  font-family: 'Kaushan Script', cursive;
   margin-top: 0;
+  padding: 0:
 
 }
 body{
@@ -72,7 +73,7 @@ h2{
   color:white;
   display:none;
   margin-top: 0;
-  padding: -20px;  
+  padding: -20px;
 }
 
 
@@ -105,12 +106,13 @@ display: none;
 
 
 .button{
+
   display: inline-block;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     background-color: #8B4513;
-    padding: 10px 60px;
+    padding: 0px 60px;
     font-size: 30px;
     font-family: 'Kaushan Script', cursive;
     border: 1px solid #8B4513;
@@ -165,4 +167,18 @@ box-shadow: 0px 6px 0px #8B4513, 0px 3px 15px rgba(0,0,0,.4);
 
 #playerType{
   display: none;
+}
+
+
+#reset{
+  margin: -80px 0 0 -40px;
+
+}
+
+#restart{
+  display: none;
+  padding: 0 40px;
+  font-size: 10px;
+
+
 }
