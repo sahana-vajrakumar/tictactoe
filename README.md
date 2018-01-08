@@ -22,3 +22,5 @@ Web page is not responsive.
 WishList:
 Game currently includes beginners level AI. Need to add rules to AI.
 Back button to go to the beginning of the game.
+
+Game Link: https://sahana-vajrakumar.github.io/tictactoe/
